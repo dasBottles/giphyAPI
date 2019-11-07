@@ -12,14 +12,14 @@ const getData = () => {
         let gifs = response.data;
 
         //populate #gifs-go-here
-        $('#gifs-go-here').empty();
+        $('.gif-container').empty();
         for (let i = 0; i < gifs.length; i++) {
             let gifDisplay = $("<div>");
             gifDisplay.addClass('card gifBlock');
             gifDisplay.append("<img class='card-img-top' src='" + gifs[i].images.original.url + "'>");
             gifDisplay.append("<p class='card-text'>Title: " + gifs[i].title + "</p>");
             gifDisplay.append("<p class='card-text'>Rating: " + gifs[i].rating + "</p>");
-            $('#gifs-go-here').append(gifDisplay);
+            $('.gif-container').append(gifDisplay);
         }
     });
 };
