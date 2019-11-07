@@ -1,0 +1,10 @@
+.gifBlock {
+    width: 18rem;
+    margin: 25px 0 25px 0;
+}
+
+.gifBlock img{
+    width: 18rem;
+    height: 18rem;
+}
+
