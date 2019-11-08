@@ -6,7 +6,7 @@ const getData = () => {
     let ratingInput = $('#ratingInput').val().trim();
 
     //api call
-    let xhr = $.get("http://api.giphy.com/v1/gifs/search?q=" + searchInput + "&api_key=kI0T0d8hy8iGLfpIMHqAVeGpN5MFUspg&limit=" + limitInput + "&rating=" + ratingInput);
+    let xhr = $.get("https://api.giphy.com/v1/gifs/search?q=" + searchInput + "&api_key=kI0T0d8hy8iGLfpIMHqAVeGpN5MFUspg&limit=" + limitInput + "&rating=" + ratingInput);
     xhr.done(function(response) { 
             console.log("success got data", response); 
         let gifs = response.data;
