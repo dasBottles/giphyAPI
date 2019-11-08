@@ -14,7 +14,7 @@
     font-family: 'Merriweather', serif;
 }
 
-.gif-container {
+#gif-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
